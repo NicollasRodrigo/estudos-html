@@ -1,0 +1,145 @@
+/* Página */
+body {
+    font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #ecefe6;
+    color: #222;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título */
+#Titulo {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Formulário e currículo */
+#editor,
+#curriculo {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#editor,
+#curriculo {
+    text-align: center;
+}
+
+/* Campos */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #fff;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Fonte dos campos e botões */
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* Contorno dos campos */
+input:focus,
+textarea:focus {
+    outline: 2px solid #4b5320;
+    border-color: transparent;
+}
+
+/* Botões */
+button {
+    padding: 10px 16px;
+    background-color: #4b5320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5f6b2a;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    color: #3a4118;
+}
+
+/* Mensagem */
+#notificacao {
+    background-color: #ecefe6;
+    color: #3a4118;
+    border: 1px solid #4b5320;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#notificacao[hidden] {
+    display: none;
+}
+
+/* Última visita */
+#visita {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Tema escuro */
+body.dark {
+    background-color: #1e2210;
+    color: #eee;
+}
+
+body.dark #editor,
+body.dark #curriculo {
+    background-color: #2c3318;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: #c5d08a;
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: #1e2210;
+    color: #eee;
+    border: 1px solid #4b5320;
+}
+
+body.dark input:focus,
+body.dark textarea:focus {
+    outline: 2px solid #c5d08a;
+}
+
+body.dark #notificacao {
+    background-color: #2c3318;
+    color: #c5d08a;
+    border-color: #c5d08a;
+}
